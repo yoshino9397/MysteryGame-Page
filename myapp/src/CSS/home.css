@@ -1,0 +1,73 @@
+#menu-26 {
+  display: none;
+}
+
+.menu {
+  -webkit-transition: all 0.56s;
+  transition: all 0.56s;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.menu_part {
+  width: 24px;
+  height: 4px;
+  position: absolute;
+  background: #ff00f2;
+  right: 0;
+  margin: auto;
+  left: 0;
+  border-radius: 2px;
+  -webkit-transition: all 0.56s cubic-bezier(0.5, 0, 0.4, 1.5);
+  transition: all 0.56s cubic-bezier(0.5, 0, 0.4, 1.5);
+  width: 24;
+  top: calc(50% - ((7px)) + -1px);
+}
+
+.menu_part:nth-of-type(1) {
+  top: calc(50% - ((7px)) + -1px);
+  width: 24px;
+}
+
+.menu_part:nth-of-type(2) {
+  top: calc(50% - ((7px)) + 4px);
+  width: 24px;
+}
+
+.menu_part:nth-of-type(3) {
+  top: calc(50% - ((7px)) + 9px);
+  width: 24px;
+}
+
+input#menu-26:checked + label .menu {
+  -webkit-transform: scale(1.01) rotate(180deg);
+          transform: scale(1.01) rotate(180deg);
+}
+
+input#menu-26:checked + label .menu .menu_part:nth-of-type(1) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: 24px !important;
+  top: calc(50% - (2px)) !important;
+}
+
+input#menu-26:checked + label .menu .menu_part:nth-of-type(2) {
+  left: 2px !important;
+  opacity: 0;
+}
+
+input#menu-26:checked + label .menu .menu_part:nth-of-type(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  width: 24px !important;
+  top: calc(50% - (2px)) !important;
+}
+
+input#menu-26:checked + label .menu {
+  -webkit-transform: scale(1.01) rotate(180deg);
+          transform: scale(1.01) rotate(180deg);
+  border: 2px solid black;
+}
