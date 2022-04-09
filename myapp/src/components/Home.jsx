@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import "../CSS/home.css";
+import { Sling as Hamburger } from "hamburger-react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
@@ -33,10 +34,18 @@ const pages = [
 ];
 
 const Home = () => {
+  const [isOpen, setOpen] = useState(false);
+  const modeRef = useRef();
+
+  const handleToggle = () => {
+    modeRef.current.classList.toggle("open-menu");
+  };
+
   const linkStyle = {
     textDecoration: "none",
     color: "white",
   };
+
   return (
     <>
       <Grid
@@ -86,19 +95,25 @@ const Home = () => {
         <Grid
           container
           direction="column"
-          justifyContent="center"
+          justifyContent="flex-start"
           alignItems="flex-end"
         >
-          <Grid item sx={{ margin: "40px" }}>
-            <input id="menu-26" type="checkbox" />
-            <label htmlFor="menu-26">
-              <div className="menu">
-                <div className="menu_part"></div>
-                <div className="menu_part"></div>
-                <div className="menu_part"></div>
-              </div>
-            </label>
-            <nav>
+          <Grid
+            item
+            sx={{ margin: "40px", position: "absolute", zIndex: "100" }}
+          >
+            <Hamburger
+              toggled={isOpen}
+              toggle={setOpen}
+              color="white"
+              easing="ease-in"
+              onToggle={(toggled) => {
+                handleToggle(toggled);
+              }}
+            />
+          </Grid>
+          <Grid item sx={{ position: "absolute", zIndex: "1" }}>
+            <nav ref={modeRef}>
               <ul>
                 {pages.map((page, i) => (
                   <li key={i}>
@@ -110,40 +125,40 @@ const Home = () => {
               </ul>
             </nav>
           </Grid>
-          <Grid
-            item
-            sx={{
-              display: { xs: "none", sm: "none", md: "flex" },
-              margin: "20vh 3vw 0 0 ",
-              flexDirection: "column",
-            }}
-          >
-            <ThemeProvider theme={japanese}>
-              <Typography
-                variant="h1"
-                color="white"
-                sx={{
-                  padding: "10px 20px",
-                  textShadow: "2px 4px rgb(190, 0, 159)",
-                }}
-              >
-                地下室の怪人
-              </Typography>
-            </ThemeProvider>
-            <ThemeProvider theme={font}>
-              <Typography
-                variant="h2"
-                color="white"
-                sx={{
-                  padding: "10px 20px",
-                  textShadow: "2px 4px rgb(190, 0, 159)",
-                  textAlign: "center",
-                }}
-              >
-                The Phantom
-              </Typography>
-            </ThemeProvider>
-          </Grid>
+        </Grid>
+        <Grid
+          container
+          sx={{
+            display: { xs: "none", sm: "none", md: "flex" },
+            margin: "20vh 3vw 0 0 ",
+            flexDirection: "column",
+          }}
+        >
+          <ThemeProvider theme={japanese}>
+            <Typography
+              variant="h1"
+              color="white"
+              sx={{
+                padding: "10px 20px",
+                textShadow: "2px 4px rgb(190, 0, 159)",
+              }}
+            >
+              地下室の怪人
+            </Typography>
+          </ThemeProvider>
+          <ThemeProvider theme={font}>
+            <Typography
+              variant="h2"
+              color="white"
+              sx={{
+                padding: "10px 20px",
+                textShadow: "2px 4px rgb(190, 0, 159)",
+                textAlign: "center",
+              }}
+            >
+              The Phantom
+            </Typography>
+          </ThemeProvider>
         </Grid>
       </Box>
     </>
