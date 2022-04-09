@@ -1,55 +1,21 @@
-#menu-26 {
-	display: none;
+nav {
+  background: #0bd;
+	height: calc(100vh - 48px) ;
+	padding-top: 3rem;
+  // top: 3.125rem;
+  // right: 0;
+  overflow-x: hidden;
+  text-align: center;
+  width:0;
+  transition: .5s;
 }
 
-.menu {
-transition: all 0.56s;
-position: relative;
-width: 44px;
-height: 44px;
-border-radius: 100%;
-cursor: pointer;
-	&_part {		
-width: 24px; 
-height: 4px; 
-position: absolute;
-background: #313d44; 
-right: 0;
-margin: auto;
-left: 0;
-border-radius: 2px;
-transition: all 0.56s cubic-bezier(0.5, 0, 0.4, 1.5);
-width:24;top: calc(50% - ((7px)) + -1px);
-		&:nth-of-type(1) {
-	top: calc(50% - ((7px)) + -1px);
-	width: 24px
-}
-&:nth-of-type(2) {
-	top: calc(50% - ((7px)) + 4px);
-	width: 24px
-}
-	&:nth-of-type(3) {
-	top: calc(50% - ((7px)) + 9px);
-	width: 24px
-}
-}
-}
-input#menu-26:checked + label .menu {
-transform:scale(1.01) rotate(180deg);
-}
-input#menu-26:checked + label .menu .menu_part:nth-of-type(1) {
-transform: rotate(45deg);
-width: 24px !important;
-top: calc(50% - (2px))!important;
-}
-input#menu-26:checked + label .menu .menu_part:nth-of-type(2) {
-left: 2px !important;
-opacity: 0;
+nav.open-menu {
+  width: 60vw;
 }
 
-input#menu-26:checked + label .menu .menu_part:nth-of-type(3) {
-transform: rotate(-45deg);
-width: 24px!important;
-top: calc(50% - (2px))!important;
+li {
+	list-style: none;
+	font-size:2rem;
+	padding-top: 2rem;
 }
-input#menu-26:checked + label .menu {transform:scale(1.01) rotate(180deg); border: 2px solid black;}
