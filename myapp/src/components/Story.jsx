@@ -1,4 +1,5 @@
 import React from "react";
+import "../CSS/bg.css";
 import { story } from "../data.js";
 import Navbar from "./Navbar";
 import paper from "../images/paper.jpg";
@@ -18,14 +19,14 @@ const theme = createTheme({
 const Story = () => {
   return (
     <>
+      <Navbar sx={{ position: "absolute" }} />
       <ThemeProvider theme={theme}>
-        <Navbar sx={{ position: "absolute" }} />
         <Box
           sx={{
-            backgroundColor: "black",
             backgroundImage: `url(${paper})`,
             backgroundSize: "contain",
-            height: "150vh",
+            backgroundRepeat: "repeat",
+            height: "170vh",
           }}
         >
           <Grid
@@ -39,15 +40,17 @@ const Story = () => {
                 position: "absolute",
                 backgroundColor: "rgba(0, 0, 0, 0.7)",
                 width: "60vw",
-                mt: "10vh",
+                height: "130vh",
+                m: "10vh 0",
                 p: "3vw 7vh",
+                overflow: "scroll",
               }}
             >
               <CardContent sx={{ textAlign: "center" }}>
-                <Typography variant="h3" color="white" sx={{}}>
+                <Typography variant="h3" color="white">
                   In June 1918
                 </Typography>
-                <Typography variant="h3" color="#d40e99" sx={{}}>
+                <Typography variant="h3" color="#d40e99" sx={{ mt: "5vh" }}>
                   Jimbocho in the rainy season
                 </Typography>
                 {story.map((item) => (
