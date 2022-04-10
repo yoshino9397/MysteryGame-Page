@@ -8,10 +8,10 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 const menu = [
   { page: "Home", path: "/home" },
   { page: "Story", path: "/story" },
-  { page: "Character", path: "/home" },
-  { page: "CG", path: "/home" },
-  { page: "Support", path: "/home" },
-  { page: "Special", path: "/home" },
+  { page: "Character", path: "/character" },
+  { page: "CG", path: "/cgs" },
+  { page: "Support", path: "/support" },
+  { page: "Special", path: "/special" },
 ];
 
 const theme = createTheme({
