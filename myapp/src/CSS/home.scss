@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital@1&display=swap');
-
 nav {
-  background:linear-gradient(rgba(0, 0, 0, 0.628), rgba(79, 78, 78, 0.343)), url(../images/sidebar.jpg);
+  background:linear-gradient(rgba(0, 0, 0, 0.628), rgba(52, 51, 51, 0.343)), url(../images/sidebar.jpg);
   clip-path: polygon(5% 0, 100% 0%, 100% 100%, 28% 100%);
   -webkit-clip-path: polygon(5% 0, 100% 0%, 100% 100%, 28% 100%);
-  background-size: 73%;
+  background-size: cover;
 	height: calc(100vh - 48px) ;
 	padding-top: 3rem;
   top: 0;
@@ -27,7 +25,7 @@ li {
   transition: .6s;
   cursor: pointer;
   &:hover{
-    background-color: rgba(26, 25, 25, 0.448);
+    background-color: rgba(0, 0, 0, 0.256);
     width:70%;
     text-shadow: 2px 4px rgb(190, 0, 159)
   }
