@@ -1,5 +1,4 @@
 import React from "react";
-import "../CSS/bg.css";
 import { story } from "../data.js";
 import Navbar from "./Navbar";
 import paper from "../images/paper.jpg";
