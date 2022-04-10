@@ -31,7 +31,7 @@ const responsive = createTheme({
 });
 const pages = [
   { page: "Home", path: "/home" },
-  { page: "Story", path: "/home" },
+  { page: "Story", path: "/story" },
   { page: "Character", path: "/home" },
   { page: "CG", path: "/home" },
   { page: "Support", path: "/home" },
@@ -150,11 +150,9 @@ const Home = () => {
               <nav ref={modeRef}>
                 <ul>
                   {pages.map((page, i) => (
-                    <li key={i}>
-                      <Link to={page.path} style={linkStyle}>
-                        {page.page}
-                      </Link>
-                    </li>
+                    <Link to={page.path} style={linkStyle}>
+                      <li key={i}>{page.page}</li>
+                    </Link>
                   ))}
                 </ul>
               </nav>
