@@ -32,10 +32,10 @@ const responsive = createTheme({
 const pages = [
   { page: "Home", path: "/home" },
   { page: "Story", path: "/story" },
-  { page: "Character", path: "/home" },
-  { page: "CG", path: "/home" },
-  { page: "Support", path: "/home" },
-  { page: "Special", path: "/home" },
+  { page: "Character", path: "/character" },
+  { page: "CG", path: "/cgs" },
+  { page: "Support", path: "/support" },
+  { page: "Special", path: "/special" },
 ];
 
 const Home = () => {
@@ -92,7 +92,6 @@ const Home = () => {
             justifyContent="flex-start"
             alignItems="flex-end"
             sx={{
-              position: "absolute",
               zIndex: "100",
               width: "90vw",
               display: { xs: "flex", sm: "flex", md: "none" },
@@ -167,8 +166,7 @@ const Home = () => {
             sx={{
               display: { xs: "none", sm: "none", md: "flex" },
               mt: "35vh",
-              ml: "3vh",
-              pr: "5vh",
+              width: "95vw",
               flexDirection: "column",
             }}
           >
