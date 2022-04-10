@@ -1,7 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital@1&display=swap");
 nav {
-  background: #0bd;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.628)), to(rgba(79, 78, 78, 0.343))), url(../images/sidebar.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.628), rgba(79, 78, 78, 0.343)), url(../images/sidebar.jpg);
+  clip-path: polygon(5% 0, 100% 0%, 100% 100%, 28% 100%);
+  -webkit-clip-path: polygon(5% 0, 100% 0%, 100% 100%, 28% 100%);
+  background-size: 73%;
   height: calc(100vh - 48px);
   padding-top: 3rem;
+  top: 0;
+  right: 0;
   overflow-x: hidden;
   text-align: center;
   width: 0;
@@ -15,7 +22,17 @@ nav.open-menu {
 
 li {
   list-style: none;
-  font-size: 2rem;
-  padding-top: 2rem;
+  font-size: 3rem;
+  padding: 2.7rem 0 0 5rem;
+  font-family: "Gentium Book Basic",serif;
+  -webkit-transition: .6s;
+  transition: .6s;
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: rgba(26, 25, 25, 0.448);
+  width: 70%;
+  text-shadow: 2px 4px #be009f;
 }
 /*# sourceMappingURL=home.css.map */
