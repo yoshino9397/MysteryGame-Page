@@ -4,6 +4,7 @@ import Top from "./components/Top";
 import Home from "./components/Home";
 import Story from "./components/Story";
 import Support from "./components/Support";
+import CG from "./components/CG";
 
 function App() {
   return (
@@ -13,9 +14,9 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/story" element={<Story />} />
         <Route path="/support" element={<Support />} />
+        <Route path="/cgs" element={<CG />} />
         {/* 
         <Route path="/character" element={<Character />} />
-        <Route path="/cgs" element={<CG/>} />
         <Route path="/special" element={<Special/>} /> */}
       </Routes>
     </BrowserRouter>
