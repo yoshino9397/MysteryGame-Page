@@ -6,6 +6,8 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import Card from "@mui/material/Card";
+import CardMedia from "@mui/material/CardMedia";
 
 const font = createTheme({
   typography: {
@@ -25,7 +27,7 @@ const CG = () => {
           backgroundImage: `url(${paper})`,
           backgroundSize: "contain",
           backgroundRepeat: "repeat",
-          height: "180vh",
+          height: "120vh",
         }}
       >
         <ThemeProvider theme={font}>
@@ -48,11 +50,13 @@ const CG = () => {
           direction="row"
           justifyContent="center"
           alignItems="center"
-          sx={{ ml: "3vw", pt: "5vh" }}
+          width="100vw"
         >
           {pictures.map((item) => (
-            <Grid item xs={8} sm={6} md={4} key={item.id} sx={{ mt: "3vh" }}>
-              <img src={item.image} alt="" style={imgStyle} />
+            <Grid item xs={6} sm={6} md={4} key={item.id}>
+              <Card sx={{ maxWidth: 400, m: "7vh 3vw" }}>
+                <CardMedia component="img" src={item.image} />
+              </Card>
             </Grid>
           ))}
         </Grid>
