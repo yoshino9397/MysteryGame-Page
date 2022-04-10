@@ -28,6 +28,19 @@ const Story = () => {
             height: "170vh",
           }}
         >
+          <Typography
+            variant="h2"
+            color="white"
+            sx={{
+              textAlign: "center",
+              textShadow: "2px 4px rgb(190, 0, 159)",
+              backgroundColor: "rgb(0, 0, 0,0.4)",
+              height: "10vh",
+              p: "20px 0",
+            }}
+          >
+            Story
+          </Typography>
           <Grid
             container
             direction="column"
