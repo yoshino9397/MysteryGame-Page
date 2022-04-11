@@ -32,7 +32,7 @@ const Support = () => {
             backgroundImage: `url(${paper})`,
             backgroundSize: "contain",
             backgroundRepeat: "repeat",
-            height: "180vh",
+            height: { xs: "250vh", sm: "230vh", md: "200vh" },
           }}
         >
           <Grid
@@ -46,10 +46,8 @@ const Support = () => {
                 position: "absolute",
                 backgroundColor: "rgba(0, 0, 0, 0.7)",
                 width: "60vw",
-                height: "140vh",
                 m: "10vh 0",
                 p: "3vw 7vh",
-                overflow: "scroll",
               }}
             >
               <CardContent sx={{ textAlign: "center", alignItems: "center" }}>
