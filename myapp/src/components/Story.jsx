@@ -25,7 +25,7 @@ const Story = () => {
             backgroundImage: `url(${paper})`,
             backgroundSize: "contain",
             backgroundRepeat: "repeat",
-            height: "170vh",
+            height: { xs: "300vh", sm: "277vh", md: "220vh" },
           }}
         >
           <Typography
@@ -52,10 +52,8 @@ const Story = () => {
                 position: "absolute",
                 backgroundColor: "rgba(0, 0, 0, 0.7)",
                 width: "60vw",
-                height: "130vh",
                 m: "10vh 0",
                 p: "3vw 7vh",
-                overflow: "scroll",
               }}
             >
               <CardContent sx={{ textAlign: "center" }}>
