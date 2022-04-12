@@ -60,7 +60,7 @@ const Story = () => {
                 <Typography variant="h3" color="white">
                   In June 1918
                 </Typography>
-                <Typography variant="h3" color="#d40e99" sx={{ mt: "5vh" }}>
+                <Typography variant="h3" color="#be00be" sx={{ mt: "5vh" }}>
                   Jimbocho in the rainy season
                 </Typography>
                 {story.map((item) => (
@@ -82,7 +82,7 @@ const Story = () => {
                   What is real,
                   <br /> what is a hallucination?
                 </Typography>
-                <Typography variant="h4" color="#d40e99" sx={{}}>
+                <Typography variant="h4" color="#be00be" sx={{}}>
                   In this pop-occult mystery that surrounds
                   <br />
                   the deaths of his friends

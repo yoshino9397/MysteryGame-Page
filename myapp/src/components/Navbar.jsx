@@ -43,7 +43,7 @@ const Navbar = () => {
                 transition: ".3s",
                 backgroundColor: "black",
                 ":hover": {
-                  backgroundColor: "#d40e99",
+                  backgroundColor: "#be00be",
                   color: "black",
                 },
               }}
