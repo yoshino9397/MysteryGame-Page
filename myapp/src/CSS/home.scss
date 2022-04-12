@@ -11,10 +11,12 @@ nav {
   text-align: center;
   width:0;
   transition: .5s;
+  opacity: 0;
 }
 
 nav.open-menu {
   width: 60vw;
+  opacity: 1;
 }
 
 li {

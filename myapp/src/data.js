@@ -30,31 +30,25 @@ export const pictures = [
   {
     id: 1,
     image: "https://live.staticflickr.com/65535/51995761238_8dab69d28e_h.jpg",
-    modal: "https://live.staticflickr.com/65535/51995761238_8dab69d28e_h.jpg",
   },
   {
     id: 2,
     image: "https://live.staticflickr.com/65535/51995707216_760a0b8215_h.jpg",
-    modal: "https://live.staticflickr.com/65535/51995707216_760a0b8215_h.jpg",
   },
   {
     id: 3,
     image: "https://live.staticflickr.com/65535/51996245315_0dabdd1ad1_h.jpg",
-    modal: "https://live.staticflickr.com/65535/51996245315_0dabdd1ad1_h.jpg",
   },
   {
     id: 4,
     image: "https://live.staticflickr.com/65535/51995760648_5d5fbd1e81_h.jpg",
-    modal: "https://live.staticflickr.com/65535/51995760648_5d5fbd1e81_h.jpg",
   },
   {
     id: 5,
     image: "https://live.staticflickr.com/65535/51995762158_6e6c87ca3d_h.jpg",
-    modal: "https://live.staticflickr.com/65535/51995762158_6e6c87ca3d_h.jpg",
   },
   {
     id: 6,
     image: "https://live.staticflickr.com/65535/51994698757_1aecda8eb5_h.jpg",
-    modal: "https://live.staticflickr.com/65535/51994698757_1aecda8eb5_h.jpg",
   },
 ];

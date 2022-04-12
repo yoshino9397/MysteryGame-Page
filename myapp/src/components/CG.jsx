@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import AwesomeSliderStyles from "../CSS/cg.css";
 import { pictures } from "../data.js";
+import AwesomeSlider from "react-awesome-slider";
 import Navbar from "./Navbar";
 import paper from "../images/paper.jpg";
 import Box from "@mui/material/Box";
@@ -26,8 +28,8 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: "50vw",
-  height: "50vh",
+  width: { xs: "70vw", sm: "65vh", md: "60vw" },
+  height: { xs: "40vh", sm: "43vh", md: "70vh" },
   backgroundColor: "rgba(0,0,0,0.6)",
   border: "2px solid gray",
   boxShadow: 24,
@@ -37,7 +39,7 @@ const style = {
 
 const CG = () => {
   const [open, setOpen] = useState(false);
-  const [modalData, setModalData] = useState(null);
+  const [modalData, setModalData] = useState("");
 
   return (
     <>
@@ -87,19 +89,38 @@ const CG = () => {
               </Grid>
             </>
           ))}
-          <Modal open={open} onClose={() => setOpen(false)}>
-            <Box sx={style}>
+        </Grid>
+        <Modal open={open} onClose={() => setOpen(false)}>
+          <Box sx={style}>
+            <Grid
+              container
+              direction="column"
+              justifyContent="center"
+              alignItems="flex-end"
+            >
               <CgCloseR
                 onClick={() => setOpen(false)}
-                style={{ fontSize: "30px", color: "white" }}
+                style={{ fontSize: "33px", color: "white" }}
               />
-              <Card sx={{ maxWidth: 400, m: "7vh 3vw" }}>
-                {/* <CardMedia component="img" src={modalData.image} /> */}
-                <CardMedia component="img" src={paper} />
-              </Card>
-            </Box>
-          </Modal>
-        </Grid>
+            </Grid>
+            <Grid
+              container
+              direction="row"
+              justifyContent="center"
+              alignItems="center"
+              sx={{ mt: "2vh" }}
+            >
+              <AwesomeSlider
+                cssModule={AwesomeSliderStyles}
+                selected={modalData.id - 1}
+              >
+                {pictures.map((item) => (
+                  <div data-src={item.image} />
+                ))}
+              </AwesomeSlider>
+            </Grid>
+          </Box>
+        </Modal>
       </Box>
     </>
   );
