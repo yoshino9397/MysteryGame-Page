@@ -52,3 +52,70 @@ export const pictures = [
     image: "https://live.staticflickr.com/65535/51994698757_1aecda8eb5_h.jpg",
   },
 ];
+
+export const game = [
+  {
+    id: 1,
+    site: "Stellaworth",
+    path: "https://www.stellaworth.co.jp/",
+  },
+  {
+    id: 2,
+    site: "Toranoana",
+    path: "https://www.toranoana.jp/",
+  },
+  {
+    id: 3,
+    site: "Download version",
+    path: "https://booth.pm/en",
+  },
+];
+
+export const music = [
+  {
+    id: 1,
+    site: "Stellaworth",
+    path: "https://www.stellaworth.co.jp/",
+  },
+  {
+    id: 2,
+    site: "Toranoana",
+    path: "https://www.toranoana.jp/",
+  },
+  {
+    id: 3,
+    site: "BOOTH",
+    path: "https://booth.pm/en",
+  },
+];
+
+export const book = [
+  {
+    id: 1,
+    site: "Stellaworth",
+    path: "https://www.stellaworth.co.jp/",
+  },
+  {
+    id: 2,
+    site: "Toranoana",
+    path: "https://www.toranoana.jp/",
+  },
+];
+
+export const bonus = [
+  {
+    id: 1,
+    site: "The prequel of each character",
+    path: "https://www.stellaworth.co.jp/",
+  },
+  {
+    id: 2,
+    site: "The sequel of each character",
+    path: "https://www.toranoana.jp/",
+  },
+  {
+    id: 3,
+    site: "Extra works",
+    path: "https://booth.pm/en",
+  },
+];

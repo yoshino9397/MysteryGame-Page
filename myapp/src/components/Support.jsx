@@ -32,9 +32,22 @@ const Support = () => {
             backgroundImage: `url(${paper})`,
             backgroundSize: "contain",
             backgroundRepeat: "repeat",
-            height: { xs: "250vh", sm: "230vh", md: "200vh" },
+            height: { xs: "250vh", sm: "230vh", md: "210vh" },
           }}
         >
+          <Typography
+            variant="h2"
+            color="white"
+            sx={{
+              textAlign: "center",
+              textShadow: "2px 4px rgb(190, 0, 159)",
+              backgroundColor: "rgb(0, 0, 0,0.4)",
+              height: "10vh",
+              p: "20px 0",
+            }}
+          >
+            Support
+          </Typography>
           <Grid
             container
             direction="column"
@@ -51,7 +64,7 @@ const Support = () => {
               }}
             >
               <CardContent sx={{ textAlign: "center", alignItems: "center" }}>
-                <Typography variant="h4" color="#d40e99">
+                <Typography variant="h4" color="#be00be">
                   ▶︎ Support
                 </Typography>
                 <Typography variant="h6" color="white" sx={{ mt: "3vh" }}>
@@ -75,7 +88,7 @@ const Support = () => {
                   <br />
                   If you can show it, we can respond in more detail.
                 </Typography>
-                <Typography variant="h4" color="#d40e99" sx={{ mt: "7vh" }}>
+                <Typography variant="h4" color="#be00be" sx={{ mt: "7vh" }}>
                   ▶︎ Message
                 </Typography>
                 <Typography variant="h6" color="white" sx={{ mt: "3vh" }}>
