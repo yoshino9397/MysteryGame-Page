@@ -30,7 +30,7 @@ const responsive = createTheme({
   },
 });
 const pages = [
-  { page: "Home", path: "/home" },
+  { page: "Home", path: "/" },
   { page: "Story", path: "/story" },
   { page: "Character", path: "/character" },
   { page: "CG", path: "/cgs" },

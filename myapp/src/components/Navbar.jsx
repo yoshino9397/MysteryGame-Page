@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const menu = [
-  { page: "Home", path: "/home" },
+  { page: "Home", path: "/" },
   { page: "Story", path: "/story" },
   { page: "Character", path: "/character" },
   { page: "CG", path: "/cgs" },
