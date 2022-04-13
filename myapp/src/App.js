@@ -6,6 +6,7 @@ import Support from "./components/Support";
 import CG from "./components/CG";
 import Special from "./components/Special";
 import Character from "./components/Character";
+import Person from "./components/Person";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/cgs" element={<CG />} />
         <Route path="/special" element={<Special />} />
         <Route path="/character" element={<Character />} />
+        <Route path="/person/:id" element={<Person />} />
       </Routes>
     </BrowserRouter>
   );
