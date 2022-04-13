@@ -5,6 +5,7 @@ import Story from "./components/Story";
 import Support from "./components/Support";
 import CG from "./components/CG";
 import Special from "./components/Special";
+import Character from "./components/Character";
 
 function App() {
   return (
@@ -15,9 +16,7 @@ function App() {
         <Route path="/support" element={<Support />} />
         <Route path="/cgs" element={<CG />} />
         <Route path="/special" element={<Special />} />
-        {/* 
         <Route path="/character" element={<Character />} />
-         */}
       </Routes>
     </BrowserRouter>
   );

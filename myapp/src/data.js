@@ -119,3 +119,30 @@ export const bonus = [
     path: "https://booth.pm/en",
   },
 ];
+
+export const characters = [
+  {
+    id: 1,
+    image: "https://live.staticflickr.com/65535/52001090299_70fa403295_b.jpg",
+  },
+  {
+    id: 2,
+    image: "https://live.staticflickr.com/65535/51999818302_ab6c428a3b_b.jpg",
+  },
+  {
+    id: 3,
+    image: "https://live.staticflickr.com/65535/52001089789_2698fe4fd7_b.jpg",
+  },
+  {
+    id: 4,
+    image: "https://live.staticflickr.com/65535/51999818542_547fec8b2d_b.jpg",
+  },
+  {
+    id: 5,
+    image: "https://live.staticflickr.com/65535/52001089549_f3eb5ec468.jpg",
+  },
+  {
+    id: 6,
+    image: "https://live.staticflickr.com/65535/52000832416_d93700be77_b.jpg",
+  },
+];
