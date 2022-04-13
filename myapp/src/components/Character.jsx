@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { characters } from "../data.js";
+import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 import paper from "../images/paper.jpg";
 import Box from "@mui/material/Box";
@@ -8,6 +9,7 @@ import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import Person from "./Person.jsx";
 
 const theme = createTheme({
   typography: {
@@ -55,8 +57,8 @@ const Character = () => {
               sx={{
                 position: "absolute",
                 backgroundColor: "rgba(0, 0, 0, 0.7)",
-                width: "86vw",
-                m: "10vh 0",
+                width: "85vw",
+                m: "5vh 0 10vh",
                 p: "4vw 7vh 6vh",
               }}
             >
@@ -69,32 +71,31 @@ const Character = () => {
               >
                 {characters.map((item) => (
                   <Grid item xs={4} sm={4} md={2} key={item.id}>
-                    <CardMedia
-                      component="img"
-                      src={item.image}
-                      alt="character"
-                      sx={{
-                        height: {
-                          xs: "58vh",
-                          sm: "55vh",
-                          md: "55vh",
-                        },
-                        width: {
-                          xs: "30vw",
-                          sm: "25vw",
-                          md: "13vw",
-                        },
-                        m: {
-                          xs: "0 0 3vh 0",
-                          sm: "0 0 3vh 0",
-                          md: 0,
-                        },
-                        cursor: "pointer",
-                      }}
-                      onClick={() => {
-                        setData(item);
-                      }}
-                    />
+                    <Link to={`/person/${item.id}`}>
+                      <CardMedia
+                        component="img"
+                        src={item.image}
+                        alt="character"
+                        sx={{
+                          height: {
+                            xs: "58vh",
+                            sm: "55vh",
+                            md: "55vh",
+                          },
+                          width: {
+                            xs: "30vw",
+                            sm: "25vw",
+                            md: "13vw",
+                          },
+                          m: {
+                            xs: "0 0 3vh 0",
+                            sm: "0 0 3vh 0",
+                            md: 0,
+                          },
+                          cursor: "pointer",
+                        }}
+                      />
+                    </Link>
                   </Grid>
                 ))}
               </Grid>
