@@ -98,7 +98,14 @@ const Special = () => {
                     width={{ xs: "10vw", sm: "10vw", md: "30vw" }}
                     src="https://live.staticflickr.com/65535/51998047957_fe11255b71_h.jpg"
                     alt="package"
-                    sx={{ m: { xs: "5vh 0", sm: "5vh 0", md: "0 0 1vh " } }}
+                    sx={{
+                      m: {
+                        xs: "5vh 0",
+                        sm: "5vh 0",
+                        md: "0 0 1vh ",
+                        width: { xs: "10vw", sm: "10vw", md: "30vw" },
+                      },
+                    }}
                   />
                 </Grid>
                 <Grid item md={7}>

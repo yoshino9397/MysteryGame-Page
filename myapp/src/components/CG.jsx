@@ -78,13 +78,25 @@ const CG = () => {
             <>
               <Grid item xs={6} sm={6} md={4} key={item.id}>
                 <Card
-                  sx={{ maxWidth: 400, m: "7vh 3vw" }}
+                  sx={{
+                    maxWidth: 420,
+                    maxHeight: 260,
+                    m: "7vh 2vw",
+                    boxShadow:
+                      "-10px 0px 15px -7px #000000, 10px 0px 15px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0)",
+                    WebkitBoxShadow:
+                      "-10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0)",
+                  }}
                   onClick={() => {
                     setModalData(item);
                     setOpen(true);
                   }}
                 >
-                  <CardMedia component="img" src={item.image} />
+                  <CardMedia
+                    component="img"
+                    src={item.image}
+                    sx={{ height: "100%" }}
+                  />
                 </Card>
               </Grid>
             </>
