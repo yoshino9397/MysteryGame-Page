@@ -158,10 +158,9 @@ export const people = [
   {
     id: 2,
     name: "Minato",
-    desc: `Born in Aizu.He is currently attending the Faculty of Letters of Imperial University. He has a gentle personality and is a common-sense person who doesn't like conflict. On the other hand, he is a little careless so has lost his student cap and wallet in some places.
+    desc: `Born in Aizu. He is attending the Faculty of Letters of Imperial University. He has a gentle personality and is a common-sense person who doesn't like conflict. On the other hand, he is a little careless so has lost his student cap and wallet in some places.
     He is a bibliophile who keeps an eye on him when he starts reading a novel and forgets to sleep and eat, and he always carries a novel with him.
-    Read through all the old books of Umebachido where Shotaro lives.
-    He seems to be making a living from the silly novel written by Shotaro, but he commits suicide while proposing Kinema's promise to Shotaro.`,
+    He loves the silly novel written by Shotaro, but he commits suicide while proposing Kinema's promise to Shotaro.`,
     image: "https://live.staticflickr.com/65535/52001133293_d34583f993_b.jpg",
   },
   {
@@ -178,17 +177,16 @@ export const people = [
     name: "Shiro",
     desc: `Born in Aizu. Shotaro and Minato are childhood friends in the same town.
     Shiro is so beautiful that everyone looks back, but his sarcasm is a fly in the ointment.
-    A genius college student who attends the Imperial University School of Medicine while living alone in the Western-style building in Hongo.
-    It's a daily routine to make a fool of Shotaro, and if he has free time, he is immersed in Umebachido. He isn't interested in art antiques and hates Jimbocho as a dusty town. He is a mysophobia. Although he is a grumpy person, Shotaro and Minato think that he isn't a bad guy, but there are some things that are a little different as a person, such as enjoying the suicide of Minato.`,
+    He is attending the Imperial University School of Medicine while living alone in Hongo.
+    It's a daily routine to make a fool of Shotaro and hates Jimbocho as a dusty town. He is a mysophobia. Although he is a grumpy person, Shotaro and Minato think that he isn't a bad guy, but there are some things that are a little different as a person, such as enjoying the suicide of Minato.`,
     image: "https://live.staticflickr.com/65535/52001326494_9ee69e96b0_b.jpg",
   },
   {
     id: 5,
     name: "Juro",
     desc: `Born in Aizu. He is a famous actor who is called a Japanese treasure.
-    His father is also a great actor, but as his movies became popular, he fascinated the people with his acting ability easily dispelled the pressure.
+    His father is also a great actor, he fascinated the people with his acting ability easily dispelled the pressure.
     He was on good terms with Shotaro and his friends, but gradually moved away from him and became estranged for the next eight years.
-    Recently, he appears in Hongo and Jimbocho, where the Imperial University is located, for some reason.
     He was always making a grumpy face, but in the old days, he smiled only at Shotaro and loved Shotaro like his younger brother. He no longer has that vestige.
     `,
     image: "https://live.staticflickr.com/65535/52001067671_70c3cd3098_z.jpg",
