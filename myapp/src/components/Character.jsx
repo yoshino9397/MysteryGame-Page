@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { characters } from "../data.js";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
@@ -9,7 +9,6 @@ import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import Person from "./Person.jsx";
 
 const theme = createTheme({
   typography: {
@@ -17,10 +16,8 @@ const theme = createTheme({
   },
 });
 const Character = () => {
-  const [data, setData] = useState("");
   const linkStyle = {
     textDecoration: "none",
-    color: "#0084ff",
   };
   return (
     <>
@@ -71,7 +68,7 @@ const Character = () => {
               >
                 {characters.map((item) => (
                   <Grid item xs={4} sm={4} md={2} key={item.id}>
-                    <Link to={`/person/${item.id}`}>
+                    <Link to={`/person/${item.id}`} style={linkStyle}>
                       <CardMedia
                         component="img"
                         src={item.image}
