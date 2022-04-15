@@ -57,59 +57,64 @@ const Home = () => {
         <Grid
           container
           backgroundColor="black"
-          direction="column"
-          justifyContent="center"
+          direction="row"
+          justifyContent="flex-end"
           alignItems="flex-start"
-          sx={{ display: { sm: "flex", md: "none" }, p: "3vh 2vw" }}
+          sx={{
+            display: { xs: "flex", sm: "flex", md: "none" },
+            width: "100%",
+          }}
         >
-          <ThemeProvider theme={japanese}>
-            <Typography
-              variant="h2"
-              color="white"
-              sx={{
-                padding: "5px 20px",
-                textShadow: "2px 4px rgb(190, 0, 159)",
-              }}
-            >
-              地下室の怪人
-            </Typography>
-          </ThemeProvider>
-          <ThemeProvider theme={font}>
-            <Typography
-              variant="h3"
-              color="white"
-              sx={{
-                padding: "10px 20px",
-                textShadow: "2px 4px rgb(190, 0, 159)",
-              }}
-            >
-              The Phantom
-            </Typography>
-          </ThemeProvider>
           <Grid
-            container
-            direction="column"
-            justifyContent="flex-start"
-            alignItems="flex-end"
+            item
+            sx={{ textAlign: "center", mr: { xs: "2vw", sm: "12vw" } }}
+          >
+            <ThemeProvider theme={japanese}>
+              <Typography
+                variant="h2"
+                color="white"
+                sx={{
+                  padding: "5px 20px",
+                  textShadow: "2px 4px rgb(190, 0, 159)",
+                }}
+              >
+                地下室の怪人
+              </Typography>
+            </ThemeProvider>
+            <ThemeProvider theme={font}>
+              <Typography
+                variant="h3"
+                color="white"
+                sx={{
+                  padding: "10px 20px",
+                  textShadow: "2px 4px rgb(190, 0, 159)",
+                }}
+              >
+                The Phantom
+              </Typography>
+            </ThemeProvider>
+          </Grid>
+          <Grid
+            item
             sx={{
               zIndex: "100",
-              width: "90vw",
               display: { xs: "flex", sm: "flex", md: "none" },
+              m: { xs: "7vh 3vw 0 0", sm: "7vh 8vw 0 0 " },
             }}
           >
-            <Grid item sx={{ pb: "-3vh" }}>
-              <Hamburger
-                toggled={isOpen}
-                toggle={setOpen}
-                color="white"
-                easing="ease-in"
-                onToggle={(toggled) => {
-                  handleToggle(toggled);
-                }}
-              />
-            </Grid>
+            <Hamburger
+              toggled={isOpen}
+              toggle={setOpen}
+              color="white"
+              easing="ease-in"
+              size={50}
+              onToggle={(toggled) => {
+                handleToggle(toggled);
+              }}
+            />
           </Grid>
         </Grid>
+
         <Box
           sx={{
             backgroundColor: "black",
