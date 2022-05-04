@@ -1,6 +1,5 @@
 # Getting Started with Create React App
-### Thissite was previously built with JS, but this time it was rebuilt with React and material UI,
- and the design was slightly changed.
+### Thissite was previously built with JS, but this time it was rebuilt with React and material UI,and the design was slightly changed.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
